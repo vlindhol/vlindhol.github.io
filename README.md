@@ -1,1 +1,0 @@
-# lindholm.dev static site
