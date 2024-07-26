@@ -61,7 +61,7 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Remove 'powered by...' from all footers
-        run: find public -type f -name '*.html' -exec perl -0777 -i -pe 's|<footer[^>]*>.*?</footer>|<footer><span>© Ville Lindholm</span></footer>|gs' {} \;
+        run: find public -type f -name '*.html' -exec perl -0777 -i -pe 's|<footer[^>]*>.*?</footer>|<footer class="footer"><span>© Ville Lindholm</span></footer>|gs' {} \;
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
