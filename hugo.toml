@@ -1,6 +1,0 @@
-baseURL = 'https://vlindhol.github.io/'
-languageCode = 'en-us'
-title = 'Lindholm Software freelance'
-theme = 'PaperMod'
-copyright = '© Ville Lindholm'
-disableHugoGeneratorInject = true
