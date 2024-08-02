@@ -10,8 +10,8 @@ params:
     enabled: true
     title: Ville Lindholm
     subtitle: Freelance developer
-    # imageUrl: "<image link>" # optional
-    # imageTitle: "<title of image as alt>" # optional
+    imageUrl: "/images/portrait.jpeg"
+    imageTitle: "Portrait of Ville"
     # imageWidth: 120 # custom size
     # imageHeight: 120 # custom size
     buttons:
