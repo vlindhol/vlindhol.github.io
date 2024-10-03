@@ -1,33 +1,52 @@
 <div id="resume">
-    <!--<img src="https://asdf.com" alt="Picture of Ville Lindholm"> -->
-    <h1>CV</h1>
-    <h2>Ville "Will" Lindholm</h2>
-    <!--
-        <p>Web: <a href="https://lindholm.dev">lindholm.dev</a></p>
-        <p>Email: <a href=#>ville@lindholm.dev</a></p>
-        <p>Twitter: <a href="https://x.com/lindholm_dev">@lindholm_dev</a></p>
-        <div id="description">
-            <p>
-                I am a software engineer currently based in Helsinki, Finland, with a deep knowledge of web-based apps
-                and APIs. I am interested in writing code that is readable, (appropriately) scalable and
-                well-architected.
-                I am always curious about new paradigms, patterns and tools.
-            </p>
-            <p>
-                In my spare time I write poetry and fiction, read a lot of books and dabble in improvisational theatre
-                and windsurfing. I also contribute to open source projects when I have the energy!
-            </p>
+    <div style="display: flex; justify-content: space-between;">
+        <h1><span class="onlyPrint">Ville Lindholm &mdash;</span> Curriculum Vitae</h1>
+        <button class="noPrint outline"
+            data-tooltip="Just print to PDF as usual, I have custom CSS styles to make it look nice!"
+            data-placement="left"><i class='bx bx-printer'></i> PDF version</button>
+    </div>
+
+    <div class="onlyPrint">
+        <div class="grid">
+            <div><i class='bx bx-envelope'></i> &langle;first_name&rangle;@&langle;last_name&rangle;.dev</a></div>
+            <div><i class='bx bx-globe'></i> <a href="https://lindholm.dev">https://lindholm.dev</a></div>
+            <div><i class='bx bxl-github'></i> <a href="https://github.com/vlindhol">@vlindhol</a></div>
+            <div><i class='bx bxl-linkedin-square'></i> <a
+                    href="https://www.linkedin.com/in/villelindholm/">villelindholm</a></div>
         </div>
-    -->
+        <hr />
+    </div>
+
+    <div id="description">
+        <p>
+            I am an experienced full stack software engineer currently based in Helsinki, Finland. I am interested in
+            writing code that is readable, (appropriately) scalable and
+            well-architected. I am always curious about new paradigms, patterns and tools.
+        </p>
+        <p>
+            In my spare time I write poetry and fiction, read a lot of books and dabble in improvisational theatre
+            and windsurfing. I also contribute to open source projects when I have the time!
+        </p>
+    </div>
     <dl>
-        <dt>Recent Experience</dt>
+        <dt>
+            <h3>Recent Experience</h3>
+        </dt>
+        <dd>
+            <div class="note-box">
+                <strong>Years of experience: ~12 years</strong>. This is a rough estimate: I started learning
+                programming as a teen in 1999 and my first programming job was in 2002,
+                constructing web shops in Perl for my local ISP. I then worked on and off with coding until I graduated
+                university, so it's hard to put a number on my "years of experience".
+            </div>
+        </dd>
         <dd>
             <div class="no-page-break">
-                <h2><a href="https://memfault.com/">Memfault</a> <span>2021 &mdash; 2024</span></h2>
+                <h4><a href="https://memfault.com/">Memfault</a> <span>2021 &mdash; 2024</span></h4>
                 <p>
                     <b>Full-stack developer</b> for a web app that ingests data from millions
                     of IoT devices. Migrated the service from Heroku to AWS. Developed
-                    a more advanced permission system. Developed a "batch operations"
+                    a more advanced permission system (backend + UI). Developed a "batch operations"
                     API for common tasks in the UI (think e-mail batch operations).
                 </p>
                 <p>
@@ -38,14 +57,15 @@
                 </p>
             </div>
             <div class="no-page-break">
-                <h2><a href="https://www.moominls.com/">Playvation / Moomin Language School</a> <span>2019 &mdash;
-                        2021</span></h2>
+                <h4><a href="https://www.moominls.com/">Playvation / Moomin Language School</a> <span>2019 &mdash;
+                        2021</span></h4>
                 <p>
                     <b>Senior Software Developer</b>. Backend and admin/content creation UI of
                     an educational mobile app for children (built with Unity). Implemented a
                     GraphQL API for the admin web app, and substantial UI/UX improvements. Added a
                     robust DevOps pipeline instead of manual deployments, bringing deployment time
-                    down from hours/days to minutes (on both AWS and AWS China).
+                    down from hours/days to minutes (on both AWS and AWS China). Also worked on the
+                    product itself, a Unity-based mobile app, mainly on asset organization improvements.
                 </p>
                 <p>
                     <i>
@@ -54,9 +74,9 @@
                 </p>
             </div>
             <div class="no-page-break">
-                <h2><a href="https://www.duodecim.fi/english/">Duodecim Publishing Company Ltd</a> <span>2017
+                <h4><a href="https://www.duodecim.fi/english/">Duodecim Publishing Company Ltd</a> <span>2017
                         &mdash;
-                        2019</span></h2>
+                        2019</span></h4>
                 <p>
                     <b>Lead developer</b> for <a href="https://www.ebmeds.org/en/">EBMEDS</a>, a CE class IIa
                     medical
@@ -81,44 +101,56 @@
         </dd>
     </dl>
     <dl>
-        <dt>Education</dt>
+        <dt>
+            <h3>Education</h3>
+        </dt>
         <dd>
             <div class="no-page-break">
-                <h2><a href="https://www.aalto.fi/en">Aalto University</a></h2>
+                <h4><a href="https://www.aalto.fi/en">Aalto University</a></h4>
                 <p>
-                    <strong>Bachelor's degree:</strong> Applied Physics 2010<br />
-                    <strong>Master's degree:</strong> Applied Physics 2014<br />
+                    <strong>Bachelor's degree:</strong> Applied Physics<br />
+                    <strong>Master's degree:</strong> Applied Physics<br />
                     <em>Major:</em> Energy physics (Fusion energy and plasma simulation)
                 </p>
-                <h2><a href="https://www.helsinki.fi/en">University of Helsinki</a></h2>
+                <h4><a href="https://www.helsinki.fi/en">University of Helsinki</a></h4>
                 <p>
-                    <strong>Bachelor's degree:</strong> Nordic literature 2014
+                    <strong>Bachelor's degree:</strong> Nordic literature
                 </p>
             </div>
         </dd>
     </dl>
     <dl>
-        <dt>Skills</dt>
+        <dt>
+            <h3>Skills</h3>
+        </dt>
         <dd>
             <div class="no-page-break">
-                <h2>Proficient</h2>
+                <h4>Proficient</h4>
                 <p>
-                    TypeScript, React, AWS, Python, REST and GraphQL APIs, Agile and
-                    Shape Up work processes, HTML and CSS.
+                    <strong>Languages/Frameworks</strong>: TypeScript, Python, React, HTML and CSS.
                 </p>
-                <h2>Intermediate</h2>
                 <p>
-                    Rust, C, Swift, C#
+                    <strong>Databases/Infra</strong>: REST and GraphQL APIs, AWS, Terraform, Ansible, PostgreSQL,
+                    ClickHouse, Redis, RabbitMQ, shell scripting.
                 </p>
-                <h2>Beginner/curious</h2>
                 <p>
-                    C++, Elixir, various Lisps
+                    <strong>Other</strong>: Scrum, Canban and Shape Up work processes
+                </p>
+                <h4>Intermediate</h4>
+                <p>
+                    Rust, C, Swift, C#, C++
+                </p>
+                <h4>Beginner/curious</h4>
+                <p>
+                    Elixir, Common Lisp, Zig
                 </p>
             </div>
         </dd>
     </dl>
     <dl>
-        <dt>References</dt>
+        <dt>
+            <h3>References</h3>
+        </dt>
         <dd>
             <div class="no-page-break">
                 Available on request (don't want to expose contact information needlessly for bots to scrape).
