@@ -1,0 +1,43 @@
+:root {
+    /* Add Junicode in front of the default Pico fonts, from https://picocss.com/docs/css-variables#all-css-variables */
+    --pico-font-family-sans-serif: "Junicode", system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue", sans-serif, var(--pico-font-family-emoji);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    --pico-font-family: "Caprasimo", cursive;
+    --pico-font-weight: 400;
+}
+
+/* handy classes for showing/hiding stuff for printing */
+@media print {
+    .noPrint {
+        display: none;
+    }
+}
+
+@media screen {
+    .onlyPrint {
+        display: none;
+    }
+}
+
+/* for displaying notes */
+.note-box {
+    border: 1px solid #cce5ff;
+    background-color: #e9f7ff;
+    color: #004085;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.note-box::before {
+    content: "ℹ️";
+    font-size: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
