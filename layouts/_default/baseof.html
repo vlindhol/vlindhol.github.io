@@ -27,6 +27,18 @@
     <!-- the rest is ours -->
     <link rel="stylesheet" href="/style.css">
     <title>{{ .Site.Title }}</title>
+
+    <!-- a naive email obfuscator to counteract scrapers -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            let first = 'ville';
+            let at = '@';
+            let last = 'lindholm';
+            document.querySelectorAll('span#lindholm-email').forEach(function (span) {
+                span.innerHTML = `${first}${at}${last}.dev`;
+            });
+        });
+    </script>
 </head>
 
 <body>

@@ -25,6 +25,25 @@ h5 {
     }
 }
 
+/* avoid page breaks for this element when printing */
+@media print {
+    .no-page-break {
+        break-inside: avoid;
+    }
+}
+
+/* smaller font when printing, Pico is pretty big */
+@media print {
+    html {
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+}
+
+
 /* for displaying notes */
 .note-box {
     border: 1px solid #cce5ff;

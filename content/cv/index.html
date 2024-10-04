@@ -6,16 +6,15 @@
             data-placement="left"><i class='bx bx-printer'></i> PDF version</button>
     </div>
 
-    <div class="onlyPrint">
-        <div class="grid">
-            <div><i class='bx bx-envelope'></i> &langle;first_name&rangle;@&langle;last_name&rangle;.dev</a></div>
-            <div><i class='bx bx-globe'></i> <a href="https://lindholm.dev">https://lindholm.dev</a></div>
-            <div><i class='bx bxl-github'></i> <a href="https://github.com/vlindhol">@vlindhol</a></div>
-            <div><i class='bx bxl-linkedin-square'></i> <a
-                    href="https://www.linkedin.com/in/villelindholm/">villelindholm</a></div>
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+        <div><i class='bx bx-envelope'></i> <span id="lindholm-email" /></div>
+        <div><i class='bx bxl-github'></i> <a href="https://github.com/vlindhol">@vlindhol</a></div>
+        <div><i class='bx bxl-linkedin-square'></i> <a
+                href="https://www.linkedin.com/in/villelindholm/">villelindholm</a></div>
+        <div class="onlyPrint"><i class='bx bx-globe'></i> <a href="https://lindholm.dev">https://lindholm.dev</a>
         </div>
-        <hr />
     </div>
+    <hr />
 
     <div id="description">
         <p>
@@ -119,12 +118,12 @@
             </div>
         </dd>
     </dl>
-    <dl>
+    <dl class="no-page-break">
         <dt>
             <h3>Skills</h3>
         </dt>
         <dd>
-            <div class="no-page-break">
+            <div>
                 <h4>Proficient</h4>
                 <p>
                     <strong>Languages/Frameworks</strong>: TypeScript, Python, React, HTML and CSS.
