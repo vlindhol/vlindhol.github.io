@@ -31,12 +31,19 @@
     <!-- a naive email obfuscator to counteract scrapers -->
     <script>
         window.addEventListener('DOMContentLoaded', function () {
-            let first = 'ville';
-            let at = '@';
-            let last = 'lindholm';
             document.querySelectorAll('span#lindholm-email').forEach(function (span) {
-                span.innerHTML = `${first}${at}${last}.dev`;
+                span.innerHTML = "Rendering email...";
+                span.setAttribute('aria-busy', 'true');
             });
+            setTimeout(function () {
+                let first = 'ville';
+                let at = '@';
+                let last = 'lindholm';
+                document.querySelectorAll('span#lindholm-email').forEach(function (span) {
+                    span.innerHTML = `${first}${at}${last}.dev`;
+                    span.removeAttribute('aria-busy');
+                });
+            }, 2000);
         });
     </script>
 </head>
@@ -50,7 +57,9 @@
                 </li>
             </ul>
             <ul>
-                <li><a href="/cv" class="contrast">CV</a></li>
+                <li><a href="/cv">
+                        <h5>CV</h5>
+                    </a></li>
                 <!-- <li><a href="/blog" class="contrast">Blog</a></li> -->
             </ul>
         </nav>
