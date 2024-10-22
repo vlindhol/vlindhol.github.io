@@ -3,24 +3,3 @@ languageCode: en-us
 title: Lindholm Software
 copyright: © Ville Lindholm
 disableHugoGeneratorInject: true
-
-params:
-  profileMode:
-    enabled: true
-    title: Ville Lindholm
-    subtitle: Freelance developer
-    imageUrl: "/images/portrait.jpeg"
-    imageTitle: "Portrait of Ville"
-    # imageWidth: 120 # custom size
-    # imageHeight: 120 # custom size
-    buttons:
-      - name: CV
-        url: "/cv"
-
-  socialIcons:
-    - name: Github
-      url: https://github.com/vlindhol/
-    - name: X
-      url: https://x.com/lindholm_dev
-    - name: Linkedin
-      url: https://www.linkedin.com/in/villelindholm/
