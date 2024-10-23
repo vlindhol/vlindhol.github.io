@@ -5,6 +5,8 @@ tags: ["programming", "python"]
 draft: false
 ---
 
+> This post was written while I was working for [Memfault](https://memfault.com) and re-posted with permission here. The original post is [on Memfault's blog](https://memfault.com/blog/a-useful-sqlalchemy-psycopg2-trick-non-blocking-mode/).
+
 We discovered a handy trick to make SQLAlchemy – or rather the underlying PostgreSQL driver called `psycopg2` – behave nicer in our Python-based backend service, by not tying up the Python process while waiting for a PostgreSQL query to finish. The improvements are especially evident in long-running queries but they also improve general system responsiveness.
 
 ## The problem – blocking the Python runtime
