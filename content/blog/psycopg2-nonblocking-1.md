@@ -24,7 +24,7 @@ The solution would be to have `psycopg2` spin up a new thread, run the PostgreSQ
 
 Luckily, this very thing already exists! To make `psycopg2` stay in Python-land, just add the following in your app startup routines:
 
-```python3
+```python
 def init_psycopg2() -> None:
     import psycopg2.extensions
     import psycopg2.extras
@@ -34,9 +34,9 @@ def init_psycopg2() -> None:
 
 The `psycopg2.extras.wait_select` is just a reference implementation which will replicate the behavior of the default, blocking driver without getting stuck in C-land, and as an added bonus it automatically cancels the SQL query on a `KeyboardInterrupt`. It is of course possible to write your own function to pass into `set_wait_callback()`, which we did when we wrote some more advanced Celery features.
 
-A good starting point to learn about `set_wait_callback` is [https://www.psycopg.org/articles/2014/07/20/cancelling-postgresql-statements-python/](this short article).
+A good starting point to learn about `set_wait_callback` is [this short article](https://www.psycopg.org/articles/2014/07/20/cancelling-postgresql-statements-python/).
 
-The fundamental reason why this feature exists in `psycopg2` is to [https://www.psycopg.org/docs/advanced.html#support-for-coroutine-libraries](enable running it in various coroutine / green thread implementations) in Python. We do not use green threads, we run a vanilla setup of Python which is fully synchronous. It is still extremely useful!
+The fundamental reason why this feature exists in `psycopg2` is to [enable running it in various coroutine / green thread implementations](https://www.psycopg.org/docs/advanced.html#support-for-coroutine-libraries) in Python. We do not use green threads, we run a vanilla setup of Python which is fully synchronous. It is still extremely useful!
 
 ## The result
 
