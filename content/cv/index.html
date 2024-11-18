@@ -18,13 +18,18 @@
 
     <div id="description">
         <p>
-            I am an experienced full stack software engineer currently based in Helsinki, Finland. I am interested in
+            I am an experienced <b>full stack software engineer</b> currently based in <b>Helsinki, Finland</b>. I am
+            interested in
             writing code that is readable, (appropriately) scalable and
             well-architected. I am always curious about new paradigms, patterns and tools.
         </p>
+        <p>I tend to <b>gravitate towards the backend</b>, since that's usually where the growing pains are for services
+            that are scaling up. In the frontend I am <b>strong with React</b>, but am increasingly interested in
+            vanilla JS and other natively supported features that browsers have nowadays.</p>
         <p>
-            In my spare time I write poetry and fiction, read a lot of books and dabble in improvisational theatre
-            and windsurfing. I also contribute to open source projects when I have the time!
+            I've been programming since childhood, first by building Web 1.0-style web pages, then by coding games. At
+            university,
+            I used my programming talents to simulate plasma at a <b>fusion energy lab</b> for my <b>physics degree</b>.
         </p>
     </div>
     <dl>
@@ -33,20 +38,28 @@
         </dt>
         <dd>
             <div class="note-box">
-                <strong>Years of experience: ~12 years</strong>. This is a rough estimate: I started learning
-                programming as a teen in 1999 and my first programming job was in 2002,
-                constructing web shops in Perl for my local ISP. I then worked on and off with coding until I graduated
-                university, so it's hard to put a number on my "years of experience".
+                <strong>Years of software engineering experience: ~12 years</strong>. This is a rough estimate; I've
+                been writing code most
+                of my life and I believe that deserves to be included, so a tacked on a few extra years to represent
+                that!
             </div>
         </dd>
         <dd>
             <div class="no-page-break">
-                <h4><a href="https://memfault.com/">Memfault</a> <span>2021 &mdash; 2024</span></h4>
+                <h4><a href="https://memfault.com/">Memfault (YC19)</a> <span>2021 &mdash; 2024</span></h4>
                 <p>
                     <b>Full-stack developer</b> for a web app that ingests data from millions
-                    of IoT devices. Migrated the service from Heroku to AWS. Developed
-                    a more advanced permission system (backend + UI). Developed a "batch operations"
-                    API for common tasks in the UI (think e-mail batch operations).
+                    of IoT devices.
+
+                <ul>
+                    <li>Migrated the service from Heroku to AWS, reducing costs ~50%.</li>
+                    <li>Developed a more advanced permission system (backend + UI), unlocking a new customer size
+                        segment.</li>
+                    <li>Developed "batch operations" for common tasks in the UI (think e-mail batch operations),
+                        preventing churn of large customers.
+                    </li>
+                    <li>PostgreSQL fine-tuning and optimization, enabling ingestion of 100% more devices.</li>
+                </ul>
                 </p>
                 <p>
                     <i>
@@ -60,11 +73,15 @@
                         2021</span></h4>
                 <p>
                     <b>Senior Software Developer</b>. Backend and admin/content creation UI of
-                    an educational mobile app for children (built with Unity). Implemented a
-                    GraphQL API for the admin web app, and substantial UI/UX improvements. Added a
-                    robust DevOps pipeline instead of manual deployments, bringing deployment time
-                    down from hours/days to minutes (on both AWS and AWS China). Also worked on the
-                    product itself, a Unity-based mobile app, mainly on asset organization improvements.
+                    an educational mobile app for children (built with Unity).
+
+                <ul>
+                    <li>Converted a REST API to GraphQL for the admin web app, plugging dozens of security holes.</li>
+                    <li>Added a robust DevOps pipeline instead of manual deployments, bringing deployment time down from
+                        hours/days to minutes.</li>
+                    <li>Asset organization improvements in the Unity-based mobile app, reducing runtime bugs by 25%.
+                    </li>
+                </ul>
                 </p>
                 <p>
                     <i>
@@ -77,23 +94,25 @@
                         &mdash;
                         2019</span></h4>
                 <p>
-                    <b>Lead developer</b> for <a href="https://www.ebmeds.org/en/">EBMEDS</a>, a CE class IIa
-                    medical
-                    device (it's purely software
-                    though). Did a full rewrite of an extremely legacy codebase into modern TypeScript, as well as
-                    moving the service into AWS.
-                </p>
-                <p>
-                    Also worked on the early version of the
-                    <a href="https://www.hl7.org/fhir/overview.html">HL7 FHIR</a> standard, both implementing
-                    parts of it for the Finnish <a href="https://www.omaolo.fi?lang=en">OmaOlo</a> national
-                    self-assessment platform (available to all
-                    Finnish citizens to get automated access to appropriate public healthcare), as well as taking
-                    part in working group meetings and conferences related to the standard itself.
+                    <b>Lead developer</b> for <a href="https://www.ebmeds.org/en/">EBMEDS</a>, a CE-marked, MDR class
+                    IIa
+                    medical device (it's purely software though).
+
+                <ul>
+                    <li>Full conversion of an extremely legacy JScript(!) codebase into modern TypeScript.</li>
+                    <li>Implemented CI/CD, deploying with horizontal scaling on AWS ECS.</li>
+                    <li>Made the contents of the service searchable, with ElasticSearch.</li>
+                    <li>Integrated the service for use in the Finnish <a
+                            href="https://www.omaolo.fi?lang=en">OmaOlo</a>, a national health service usable by 5.5
+                        million users a.k.a. citizens.</li>
+                    <li>Early contributions to the global <a href="https://www.hl7.org/fhir/overview.html">HL7 FHIR</a>
+                        standard, mainly by taking
+                        part in working group meetings and conferences.</li>
+                </ul>
                 </p>
                 <p>
                     <i>
-                        Stack: AWS, TypeScript.
+                        Stack: Express (TypeScript), Docker, Docker Swarm, AWS, AWS ECS, ElasticSearch
                     </i>
                 </p>
             </div>
@@ -144,6 +163,17 @@
                 <p>
                     Elixir, Common Lisp, Zig
                 </p>
+            </div>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <h3>Other hobbies/skills</h3>
+        </dt>
+        <dd>
+            <div class="no-page-break">
+                In my spare time I write poetry and fiction, read a lot of books and dabble in improvisational theatre
+                and windsurfing. I also contribute to open source projects when I have the time!
             </div>
         </dd>
     </dl>
