@@ -2,6 +2,7 @@
 title: "Home"
 ---
 
+{{< rawhtml >}}
 <div style="text-align: center; display: flex; justify-content: center; flex-direction: column; align-items: center; height: 50vh;">
     <img src="/images/portrait.jpeg" alt="Picture of Ville Lindholm" style="border-radius: 50%; width: 150px; height: 150px;" />
     <hgroup>
@@ -15,3 +16,4 @@ title: "Home"
         <a href="https://www.linkedin.com/in/villelindholm/"><i class='bx bxl-linkedin-square'></i></a>
     </div>
 </div>
+{{< /rawhtml >}}
