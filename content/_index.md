@@ -11,9 +11,11 @@ title: "Home"
         <p>Helsinki, Finland</p>
     </hgroup>
     <div style="display: flex;">
-        <a href="https://github.com/vlindhol"><i class='bx bxl-github'></i></a>
-        <a href="https://x.com/lindholm_dev"><i class='bx bxl-twitter'></i></a>
-        <a href="https://www.linkedin.com/in/villelindholm/"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="https://github.com/vlindhol"><i class="fa-brands fa-github"></i></a>
+        <a href="https://x.com/lindholm_dev"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/villelindholm/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://qoto.org/@ville" rel="me"><i class="fa-brands fa-mastodon"></i></a>
+        <a href="https://bsky.app/profile/vlindholm.bsky.social"><i class="fa-brands fa-bluesky"></i></a>
     </div>
 </div>
 {{< /rawhtml >}}
