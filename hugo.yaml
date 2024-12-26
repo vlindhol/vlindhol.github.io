@@ -4,6 +4,23 @@ title: Lindholm Software
 copyright: © Ville Lindholm
 disableHugoGeneratorInject: true
 
+params:
+  description: "Ville Lindholm is a freelance software developer."
+  author: "Ville Lindholm"
+  social:
+    github: "vlindhol"
+    twitter: "lindholm_dev"
+    linkedin: "villelindholm"
+
 markup:
   highlight:
     style: solarized-dark
+
+menu:
+  main:
+    - name: CV
+      url: /cv/
+      weight: 1
+    - name: Blog
+      url: /blog/
+      weight: 2

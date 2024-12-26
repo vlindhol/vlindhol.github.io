@@ -1,0 +1,17 @@
+<script>
+    window.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('span#lindholm-email').forEach(function (span) {
+            span.innerHTML = "Rendering email...";
+            span.setAttribute('aria-busy', 'true');
+        });
+        setTimeout(function () {
+            let first = 'ville';
+            let at = '@';
+            let last = 'lindholm';
+            document.querySelectorAll('span#lindholm-email').forEach(function (span) {
+                span.innerHTML = `${first}${at}${last}.dev`;
+                span.removeAttribute('aria-busy');
+            });
+        }, 2000);
+    });
+</script> 

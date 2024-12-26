@@ -1,0 +1,29 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="{{ .Site.Title }}">
+    <meta property="og:description" content="Ville Lindholm is a freelance software developer.">
+    <meta property="og:image" content="https://lindholm.dev/images/portrait.jpeg">
+    <meta property="og:url" content="https://lindholm.dev">
+    <meta property="og:type" content="website">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/junicode-2" rel="stylesheet">
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- pico helps with some basic CSS styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.css">
+
+    <!-- the rest is ours -->
+    <link rel="stylesheet" href="/style.css">
+    <title>{{ .Site.Title }}</title>
+
+    {{ partial "email-obfuscator.html" . }}
+</head> 
